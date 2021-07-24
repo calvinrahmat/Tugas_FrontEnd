@@ -4,24 +4,30 @@
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<link rel="stylesheet" href="style.css" />
-		<!-- CSS only -->
-		<link
-			href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
-			rel="stylesheet"
-			integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
-			crossorigin="anonymous"
-		/>
 		<title>Document</title>
+		<link rel="stylesheet" href="style.css" />
 	</head>
 	<body>
 		<div class="form-box">
+			<div class="logo">
+				<img
+					src="https://res.cloudinary.com/calvin-cloud/image/upload/v1627004541/Front%20End/logo_blanja_jtyc2a.svg"
+					alt="logo blanja"
+				/>
+			</div>
+			<div class="title">
+				<h1>Please login with your account</h1>
+			</div>
 			<div class="button-box">
 				<div id="button"></div>
-				<button type="button" class="toggle-button">Customer</button>
-				<button type="button" class="toggle-button">Seller</button>
+				<button type="button" class="toggle-button" onclick="loginCustomer()">
+					Customer
+				</button>
+				<button type="button" class="toggle-button" onclick="loginSeller()">
+					Seller
+				</button>
 			</div>
-			<form class="input-group">
+			<form id="login-customer" class="input-group">
 				<input type="text" class="input-field" placeholder="Email" required />
 				<input
 					type="text"
@@ -29,8 +35,34 @@
 					placeholder="Password"
 					required
 				/>
-				<button type="submit" class="submit-btn">Primary</button>
+				<button type="submit" class="submit-button">Login</button>
+			</form>
+			<form id="login-seller" class="input-group">
+				<input type="text" class="input-field" placeholder="Email" required />
+				<input
+					type="text"
+					class="input-field"
+					placeholder="Password"
+					required
+				/>
+				<button type="submit" class="submit-button">Login</button>
 			</form>
 		</div>
+		<script>
+			var x = document.getElementById('login-customer');
+			var y = document.getElementById('login-seller');
+			var z = document.getElementById('button');
+
+			function loginSeller() {
+				x.style.left = '-400px';
+				y.style.left = '50px';
+				z.style.left = '110px';
+			}
+			function loginCustomer() {
+				x.style.left = '50px';
+				y.style.left = '450px';
+				z.style.left = '0px';
+			}
+		</script>
 	</body>
 </html>
