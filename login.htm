@@ -20,10 +20,20 @@
 			</div>
 			<div class="button-box">
 				<div id="button"></div>
-				<button type="button" class="toggle-button" onclick="loginCustomer()">
+				<button
+					id="tog-cust"
+					type="button"
+					class="toggle-button"
+					onclick="loginCustomer()"
+				>
 					Customer
 				</button>
-				<button type="button" class="toggle-button" onclick="loginSeller()">
+				<button
+					id="tog-seller"
+					type="button"
+					class="toggle-button"
+					onclick="loginSeller()"
+				>
 					Seller
 				</button>
 			</div>
@@ -37,6 +47,7 @@
 				/>
 				<button type="submit" class="submit-button">Login</button>
 			</form>
+
 			<form id="login-seller" class="input-group">
 				<input type="text" class="input-field" placeholder="Email" required />
 				<input
@@ -47,22 +58,14 @@
 				/>
 				<button type="submit" class="submit-button">Login</button>
 			</form>
+			<p class="text-forgot" id="forgot-pass-cust">
+				<a href="#" class="link-forgot-pass">Forgot password?</a>
+			</p>
+			<p class="tokopedia" id="tokopedia-cust">
+				Don't have a Tokopedia account?
+				<a href="#" class="register">Register</a>
+			</p>
 		</div>
-		<script>
-			var x = document.getElementById('login-customer');
-			var y = document.getElementById('login-seller');
-			var z = document.getElementById('button');
-
-			function loginSeller() {
-				x.style.left = '-400px';
-				y.style.left = '50px';
-				z.style.left = '110px';
-			}
-			function loginCustomer() {
-				x.style.left = '50px';
-				y.style.left = '450px';
-				z.style.left = '0px';
-			}
-		</script>
+		<script src="script.js"></script>
 	</body>
 </html>

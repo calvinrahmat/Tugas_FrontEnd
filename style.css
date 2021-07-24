@@ -7,6 +7,7 @@ body {
 	font-family: metropolis;
 	text-align: center;
 	margin: 0;
+	font-size: 12;
 }
 
 .form-box {
@@ -14,18 +15,19 @@ body {
 	height: 526px;
 	position: relative;
 	margin: 6% auto;
-	background: lightblue;
+	background: transparent;
 	padding: 5px;
 	overflow: hidden;
 }
 
 .button-box {
-	top: 15px;
+	top: 40px;
 	width: 220px;
 	margin: 35px auto;
 	position: relative;
 	background-color: white;
 	border-radius: 4px;
+	border: 1px solid #9b9b9b;
 }
 
 .toggle-button {
@@ -35,6 +37,7 @@ body {
 	border: 0;
 	outline: none;
 	position: relative;
+	color: #9b9b9b;
 }
 
 #button {
@@ -43,8 +46,8 @@ body {
 	position: absolute;
 	width: 110px;
 	height: 100%;
-	background: red;
-	border-radius: 5px;
+	background: #db3022;
+	border-radius: 4px;
 	transition: 0.5s;
 }
 
@@ -56,29 +59,31 @@ body {
 }
 
 .input-field {
-	width: 330px;
-	padding: 20px 0;
+	width: 300px;
+	padding: 17px 0;
 	margin: 5px;
-	border-bottom: 1px solid #999;
-	border-left: 1px solid #999;
-	border-right: 1px solid #999;
+	border: 1px solid #9b9b9b;
 	right: 40px;
 	left: 60;
 	background: transparent;
 	border-radius: 4px;
 	position: relative;
+	padding-left: 20px;
 }
 
 .submit-button {
-	width: 85%;
-	padding: 10px 30px;
+	top: 50px;
+	right: 30px;
+	padding: 10px 142px;
 	cursor: pointer;
 	display: block;
 	margin: auto;
-	background: red;
+	background: #db3022;
 	border: 0;
 	border-radius: 30px;
 	outline: none;
+	position: relative;
+	color: white;
 }
 
 #login-customer {
@@ -87,6 +92,16 @@ body {
 
 #login-seller {
 	left: 450px;
+}
+
+#tog-cust {
+	color: white;
+	right: 5px;
+}
+
+#tog-seller {
+	color: #9b9b9b;
+	right: 5px;
 }
 
 .logo {
@@ -100,8 +115,34 @@ body {
 }
 
 .title {
-	top: 9px;
+	top: 30px;
 	position: relative;
-	font-size: 13px;
+	font-size: 10px;
 	font-weight: bold;
+}
+
+.text-forgot {
+	position: relative;
+	top: 165px;
+	text-align: right;
+	font-size: 12px;
+	color: red;
+	right: 20px;
+	text-decoration: none;
+}
+
+.tokopedia {
+	position: relative;
+	top: 250px;
+	font-size: 12px;
+}
+
+.register {
+	color: red;
+	text-decoration: none;
+}
+
+.link-forgot-pass {
+	color: red;
+	text-decoration: none;
 }
