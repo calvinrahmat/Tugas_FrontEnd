@@ -211,6 +211,10 @@ nav .filter-container .material-icons {
   height: 50px;
 }
 
+.big-container .container-carousel-category-mobile {
+  display: none;
+}
+
 .big-container .container-carousel-trending-mobile {
   display: none;
 }
@@ -288,6 +292,10 @@ nav .filter-container .material-icons {
 
 @media all and (max-width: 1320px) {
   .big-container .container-carousel-trending-mobile {
+    padding-top: 50px;
+    width: 90%;
+    margin-right: auto;
+    margin-left: auto;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -327,6 +335,47 @@ nav .filter-container .material-icons {
     background-image: url("https://res.cloudinary.com/calvin-cloud/image/upload/v1627227176/Front%20End/Group_1164_zb5vhd.svg");
     width: 50px;
     height: 50px;
+  }
+  .big-container .container-carousel-category-mobile {
+    display: block;
+    padding-top: 40px;
+    margin-right: auto;
+    margin-left: auto;
+    width: 90%;
+  }
+  .big-container .container-carousel-category-mobile .flexbox-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 30px;
+  }
+  .big-container .container-carousel-category-mobile h1 {
+    padding-left: 1.3em;
+    font-size: 34px;
+  }
+  .big-container .container-carousel-category-mobile p {
+    padding-left: 2.3em;
+    font-size: 20px;
+    color: #8e8e93;
+  }
+  .big-container .container-carousel-category-mobile .carousel-control-prev-icon {
+    background-image: url("https://res.cloudinary.com/calvin-cloud/image/upload/v1627227153/Front%20End/Group_1163_ewy2xs.svg");
+    width: 50px;
+    height: 50px;
+  }
+  .big-container .container-carousel-category-mobile .carousel-control-next-icon {
+    background-image: url("https://res.cloudinary.com/calvin-cloud/image/upload/v1627227176/Front%20End/Group_1164_zb5vhd.svg");
+    width: 50px;
+    height: 50px;
+  }
+  .big-container .container-carousel-category {
+    display: none;
   }
   .big-container .container-carousel-trending {
     display: none;
