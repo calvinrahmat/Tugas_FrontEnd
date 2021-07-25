@@ -1,6 +1,6 @@
 .box {
-  width: 455px;
-  height: 200px;
+  width: 350px;
+  height: 180px;
   border-radius: 8px;
 }
 
@@ -35,5 +35,24 @@
 
 #buttonIndicator {
   background-color: black;
+}
+
+.flexbox-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  width: 60%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media all and (max-width: 500px) {
+  #flex {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
 }
 /*# sourceMappingURL=carousel.css.map */

@@ -1,6 +1,6 @@
 .box {
-	width: 455px;
-	height: 200px;
+	width: 350px;
+	height: 180px;
 	border-radius: 8px;
 }
 
@@ -24,4 +24,17 @@
 
 #buttonIndicator {
 	background-color: black;
+}
+
+.flexbox-container {
+	display: flex;
+	justify-content: space-evenly;
+	width: 60%;
+	margin-left: auto;
+	margin-right: auto;
+}
+@media all and (max-width: 500px) {
+	#flex {
+		flex-wrap: wrap;
+	}
 }

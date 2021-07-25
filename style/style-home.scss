@@ -138,37 +138,58 @@ nav {
 }
 
 .big-container {
-	background-image: linear-gradient(#e5e5e5 30px, white);
+	background: linear-gradient(#e5e5e5 10px, white);
 	.container-carousel-category {
-		padding-top: 30px;
-		width: 90%;
+		padding-top: 40px;
 		margin-right: auto;
 		margin-left: auto;
-		.items {
+
+		width: 90%;
+		.flexbox-container {
 			display: flex;
-			justify-content: space-around;
-			li {
-				list-style-type: none;
-			}
-			img {
-				border-radius: 8px;
-			}
+			justify-content: space-evenly;
+			width: 100%;
+			margin-left: auto;
+			margin-right: auto;
+			padding-top: 30px;
 		}
+
 		h1 {
+			padding-left: 1.3em;
 			font-size: 34px;
 		}
 		p {
-			font-size: 12px;
+			padding-left: 2.3em;
+			font-size: 20px;
 			color: #8e8e93;
 		}
+		.carousel-control-prev-icon {
+			background-image: url('https://res.cloudinary.com/calvin-cloud/image/upload/v1627227153/Front%20End/Group_1163_ewy2xs.svg');
+			width: 50px;
+			height: 50px;
+		}
+
+		.carousel-control-next-icon {
+			background-image: url('https://res.cloudinary.com/calvin-cloud/image/upload/v1627227176/Front%20End/Group_1164_zb5vhd.svg');
+			width: 50px;
+			height: 50px;
+		}
+	}
+	.container-carousel-trending-mobile {
+		display: none;
 	}
 	.container-carousel-trending {
-		padding-top: 30px;
+		padding-top: 50px;
 		width: 90%;
 		margin-right: auto;
 		margin-left: auto;
-		li {
-			list-style-type: none;
+
+		.flexbox-container {
+			display: flex;
+			justify-content: space-around;
+			width: 80%;
+			margin-left: auto;
+			margin-right: auto;
 		}
 		.box {
 			width: 455px;
@@ -193,9 +214,65 @@ nav {
 			display: flex;
 			justify-content: space-evenly;
 		}
+		.flex-indicators {
+			#buttonIndicator {
+				top: 40px;
 
-		#buttonIndicator {
-			background-color: black;
+				background-image: url('https://res.cloudinary.com/calvin-cloud/image/upload/v1627227153/Front%20End/Group_1163_ewy2xs.svg');
+
+				position: relative;
+			}
+		}
+		.carousel-control-prev-icon {
+			background-image: url('https://res.cloudinary.com/calvin-cloud/image/upload/v1627227153/Front%20End/Group_1163_ewy2xs.svg');
+			width: 50px;
+			height: 50px;
+		}
+
+		.carousel-control-next-icon {
+			background-image: url('https://res.cloudinary.com/calvin-cloud/image/upload/v1627227176/Front%20End/Group_1164_zb5vhd.svg');
+			width: 50px;
+			height: 50px;
+		}
+	}
+	@media all and (max-width: 1320px) {
+		.container-carousel-trending-mobile {
+			display: flex;
+			justify-content: center;
+
+			.box {
+				width: 455px;
+				height: 200px;
+				border-radius: 8px;
+			}
+
+			.crop-to-fit {
+				align-items: center;
+				overflow: hidden;
+				display: flex;
+				justify-content: center;
+			}
+
+			.crop-to-fit img {
+				width: 455px;
+				height: 300px;
+				object-fit: fill;
+			}
+			.carousel-control-prev-icon {
+				background-image: url('https://res.cloudinary.com/calvin-cloud/image/upload/v1627227153/Front%20End/Group_1163_ewy2xs.svg');
+				width: 50px;
+				height: 50px;
+			}
+
+			.carousel-control-next-icon {
+				background-image: url('https://res.cloudinary.com/calvin-cloud/image/upload/v1627227176/Front%20End/Group_1164_zb5vhd.svg');
+				width: 50px;
+				height: 50px;
+			}
+		}
+
+		.container-carousel-trending {
+			display: none;
 		}
 	}
 }

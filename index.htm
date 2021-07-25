@@ -84,85 +84,80 @@
 					data-bs-ride="carousel"
 				>
 					<div class="carousel-indicators">
-						<button
-							id="buttonIndicator"
-							type="button"
-							data-bs-target="#carouselTrending"
-							data-bs-slide-to="0"
-							class="active"
-							aria-current="true"
-							aria-label="Slide 1"
-						></button>
-						<button
-							id="buttonIndicator"
-							type="button"
-							data-bs-target="#carouselTrending"
-							data-bs-slide-to="1"
-							aria-label="Slide 2"
-						></button>
+						<div class="flex-indicators">
+							<button
+								id="buttonIndicator"
+								type="button"
+								data-bs-target="#carouselTrending"
+								data-bs-slide-to="0"
+								class="active"
+								aria-current="true"
+								aria-label="Slide 1"
+							></button>
+							<button
+								id="buttonIndicator"
+								type="button"
+								data-bs-target="#carouselTrending"
+								data-bs-slide-to="1"
+								aria-label="Slide 2"
+							></button>
+						</div>
 					</div>
+
 					<div class="carousel-inner">
 						<div class="carousel-item active">
-							<ul class="items">
-								<li>
-									<figure class="box crop-to-fit">
-										<img
-											class="d-block"
-											w-100
-											src="https://res.cloudinary.com/calvin-cloud/image/upload/v1627188690/Front%20End/Trending/hijab_l0okhd.jpg"
-											alt=""
-										/>
-									</figure>
-								</li>
+							<div class="flexbox-container">
+								<figure class="box crop-to-fit">
+									<img
+										class="d-block"
+										w-100
+										src="https://res.cloudinary.com/calvin-cloud/image/upload/v1627188690/Front%20End/Trending/hijab_l0okhd.jpg"
+										alt=""
+									/>
+								</figure>
 
-								<li>
-									<figure class="box crop-to-fit">
-										<img
-											class="d-block"
-											w-100
-											src="https://res.cloudinary.com/calvin-cloud/image/upload/v1627188690/Front%20End/Trending/streetwear_women_cs2fhe.jpg"
-											class="
-												img-fluid
-												${3|rounded-top,rounded-right,rounded-bottom,rounded-left,rounded-circle,|}
-											"
-											alt=""
-										/>
-									</figure>
-								</li>
-							</ul>
+								<figure class="box crop-to-fit">
+									<img
+										class="d-block"
+										w-100
+										src="https://res.cloudinary.com/calvin-cloud/image/upload/v1627188690/Front%20End/Trending/streetwear_women_cs2fhe.jpg"
+										class="
+											img-fluid
+											${3|rounded-top,rounded-right,rounded-bottom,rounded-left,rounded-circle,|}
+										"
+										alt=""
+									/>
+								</figure>
+							</div>
 						</div>
 						<div class="carousel-item">
-							<ul class="items">
-								<li>
-									<figure class="box crop-to-fit">
-										<img
-											class="d-block"
-											w-100
-											src="https://res.cloudinary.com/calvin-cloud/image/upload/v1627188691/Front%20End/Trending/men_mtohqy.jpg"
-											alt=""
-										/>
-									</figure>
-								</li>
+							<div class="flexbox-container">
+								<figure class="box crop-to-fit">
+									<img
+										class="d-block"
+										w-100
+										src="https://res.cloudinary.com/calvin-cloud/image/upload/v1627188691/Front%20End/Trending/men_mtohqy.jpg"
+										alt=""
+									/>
+								</figure>
 
-								<li>
-									<figure class="box crop-to-fit">
-										<img
-											class="d-block"
-											w-100
-											src="https://res.cloudinary.com/calvin-cloud/image/upload/v1627188690/Front%20End/Trending/cargo_kpnr8x.jpg"
-											class="
-												img-fluid
-												${3|rounded-top,rounded-right,rounded-bottom,rounded-left,rounded-circle,|}
-											"
-											alt=""
-										/>
-									</figure>
-								</li>
-							</ul>
+								<figure class="box crop-to-fit">
+									<img
+										class="d-block"
+										w-100
+										src="https://res.cloudinary.com/calvin-cloud/image/upload/v1627188690/Front%20End/Trending/cargo_kpnr8x.jpg"
+										class="
+											img-fluid
+											${3|rounded-top,rounded-right,rounded-bottom,rounded-left,rounded-circle,|}
+										"
+										alt=""
+									/>
+								</figure>
+							</div>
 						</div>
 					</div>
 					<button
-						id="buttonNextPrev"
+						id="buttonNextMobile"
 						class="carousel-control-prev"
 						type="button"
 						data-bs-target="#carouselTrending"
@@ -172,7 +167,7 @@
 						<span class="visually-hidden">Previous</span>
 					</button>
 					<button
-						id="buttonNextPrev"
+						id="buttonPrev"
 						class="carousel-control-next"
 						type="button"
 						data-bs-target="#carouselTrending"
@@ -183,103 +178,189 @@
 					</button>
 				</div>
 			</div>
+
+			<!-- carosel trending mobile version -->
+			<div class="container-carousel-trending-mobile">
+				<div
+					id="carouselTrendingMobile"
+					class="carousel slide"
+					data-bs-ride="carousel"
+				>
+					<div class="carousel-indicators">
+						<div class="flex-indicators">
+							<button
+								id="buttonIndicator"
+								type="button"
+								data-bs-target="#carouselTrendingMobile"
+								data-bs-slide-to="0"
+								class="active"
+								aria-current="true"
+								aria-label="Slide 1"
+							></button>
+							<button
+								id="buttonIndicator"
+								type="button"
+								data-bs-target="#carouselTrendingMobile"
+								data-bs-slide-to="1"
+								aria-label="Slide 2"
+							></button>
+						</div>
+					</div>
+
+					<div class="carousel-inner">
+						<div class="carousel-item active">
+							<div class="flexbox-container">
+								<figure class="box crop-to-fit">
+									<img
+										class="d-block"
+										w-100
+										src="https://res.cloudinary.com/calvin-cloud/image/upload/v1627188690/Front%20End/Trending/hijab_l0okhd.jpg"
+										alt=""
+									/>
+								</figure>
+							</div>
+						</div>
+						<div class="carousel-item">
+							<div class="flexbox-container">
+								<figure class="box crop-to-fit">
+									<img
+										class="d-block"
+										w-100
+										src="https://res.cloudinary.com/calvin-cloud/image/upload/v1627188690/Front%20End/Trending/streetwear_women_cs2fhe.jpg"
+										alt=""
+									/>
+								</figure>
+							</div>
+						</div>
+						<div class="carousel-item">
+							<div class="flexbox-container">
+								<figure class="box crop-to-fit">
+									<img
+										class="d-block"
+										w-100
+										src="https://res.cloudinary.com/calvin-cloud/image/upload/v1627188691/Front%20End/Trending/men_mtohqy.jpg"
+										alt=""
+									/>
+								</figure>
+							</div>
+						</div>
+						<div class="carousel-item">
+							<div class="flexbox-container">
+								<figure class="box crop-to-fit">
+									<img
+										class="d-block"
+										w-100
+										src="https://res.cloudinary.com/calvin-cloud/image/upload/v1627188690/Front%20End/Trending/cargo_kpnr8x.jpg"
+										alt=""
+									/>
+								</figure>
+							</div>
+						</div>
+					</div>
+					<button
+						id="buttonNextMobile"
+						class="carousel-control-prev"
+						type="button"
+						data-bs-target="#carouselTrendingMobile"
+						data-bs-slide="prev"
+					>
+						<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+						<span class="visually-hidden">Previous</span>
+					</button>
+					<button
+						id="buttonPrevMobile"
+						class="carousel-control-next"
+						type="button"
+						data-bs-target="#carouselTrendingMobile"
+						data-bs-slide="next"
+					>
+						<span class="carousel-control-next-icon" aria-hidden="true"></span>
+						<span class="visually-hidden">Next</span>
+					</button>
+				</div>
+			</div>
+
 			<!-- carousel category -->
 			<div class="container-carousel-category">
 				<h1>Category</h1>
 				<p>What are you looking for</p>
-				<div
-					id="carouselCategory"
-					class="carousel slide"
-					data-bs-ride="carousel"
-				>
+				<div id="carouselCategory" class="carousel slide">
 					<div class="carousel-inner">
 						<div class="carousel-item active">
-							<ul class="items">
-								<li>
-									<img
-										class="d-block"
-										w-100
-										src="https://res.cloudinary.com/calvin-cloud/image/upload/v1627134532/Front%20End/Kategori/Pants_vfy0xa.svg"
-										alt=""
-									/>
-								</li>
-								<li>
-									<img
-										class="d-block"
-										w-100
-										src="https://res.cloudinary.com/calvin-cloud/image/upload/v1627134532/Front%20End/Kategori/Pants_vfy0xa.svg"
-										alt=""
-									/>
-								</li>
-								<li>
-									<img
-										class="d-block"
-										w-100
-										src="https://res.cloudinary.com/calvin-cloud/image/upload/v1627134532/Front%20End/Kategori/Pants_vfy0xa.svg"
-										alt=""
-									/>
-								</li>
-								<li>
-									<img
-										class="d-block"
-										w-100
-										src="https://res.cloudinary.com/calvin-cloud/image/upload/v1627134532/Front%20End/Kategori/Pants_vfy0xa.svg"
-										alt=""
-									/>
-								</li>
-								<li>
-									<img
-										class="d-block"
-										w-100
-										src="https://res.cloudinary.com/calvin-cloud/image/upload/v1627134532/Front%20End/Kategori/Pants_vfy0xa.svg"
-										alt=""
-									/>
-								</li>
-							</ul>
+							<div class="flexbox-container">
+								<img
+									class="d-block"
+									w-100
+									src="https://res.cloudinary.com/calvin-cloud/image/upload/v1627134527/Front%20End/Kategori/T-Shirt_kbhxdg.svg"
+									alt=""
+								/>
+
+								<img
+									class="d-block"
+									w-100
+									src="https://res.cloudinary.com/calvin-cloud/image/upload/v1627134527/Front%20End/Kategori/Short_dyep9b.svg"
+									alt=""
+								/>
+
+								<img
+									class="d-block"
+									w-100
+									src="https://res.cloudinary.com/calvin-cloud/image/upload/v1627134532/Front%20End/Kategori/Pants_vfy0xa.svg"
+									alt=""
+								/>
+
+								<img
+									class="d-block"
+									w-100
+									src="https://res.cloudinary.com/calvin-cloud/image/upload/v1627134529/Front%20End/Kategori/Shoes_ziteoh.svg"
+									alt=""
+								/>
+
+								<img
+									class="d-block"
+									w-100
+									src="https://res.cloudinary.com/calvin-cloud/image/upload/v1627229207/Front%20End/Kategori/Group_1236_vaxxb6.svg"
+									alt=""
+								/>
+							</div>
 						</div>
 						<div class="carousel-item">
-							<ul class="items">
-								<li>
-									<img
-										class="d-block"
-										w-100
-										src="https://res.cloudinary.com/calvin-cloud/image/upload/v1627134532/Front%20End/Kategori/Pants_vfy0xa.svg"
-										alt=""
-									/>
-								</li>
-								<li>
-									<img
-										class="d-block"
-										w-100
-										src="https://res.cloudinary.com/calvin-cloud/image/upload/v1627134532/Front%20End/Kategori/Pants_vfy0xa.svg"
-										alt=""
-									/>
-								</li>
-								<li>
-									<img
-										class="d-block"
-										w-100
-										src="https://res.cloudinary.com/calvin-cloud/image/upload/v1627134532/Front%20End/Kategori/Pants_vfy0xa.svg"
-										alt=""
-									/>
-								</li>
-								<li>
-									<img
-										class="d-block"
-										w-100
-										src="https://res.cloudinary.com/calvin-cloud/image/upload/v1627134532/Front%20End/Kategori/Pants_vfy0xa.svg"
-										alt=""
-									/>
-								</li>
-								<li>
-									<img
-										class="d-block"
-										w-100
-										src="https://res.cloudinary.com/calvin-cloud/image/upload/v1627134532/Front%20End/Kategori/Pants_vfy0xa.svg"
-										alt=""
-									/>
-								</li>
-							</ul>
+							<div class="flexbox-container">
+								<img
+									class="d-block"
+									w-100
+									src="https://res.cloudinary.com/calvin-cloud/image/upload/v1627229205/Front%20End/Kategori/Group_1237_la2pkm.svg"
+									alt=""
+								/>
+
+								<img
+									class="d-block"
+									w-100
+									src="https://res.cloudinary.com/calvin-cloud/image/upload/v1627229206/Front%20End/Kategori/Group_1235_wpjjc6.svg"
+									alt=""
+								/>
+
+								<img
+									class="d-block"
+									w-100
+									src="https://res.cloudinary.com/calvin-cloud/image/upload/v1627229209/Front%20End/Kategori/Group_1243_dhyf6s.svg"
+									alt=""
+								/>
+
+								<img
+									class="d-block"
+									w-100
+									src="https://res.cloudinary.com/calvin-cloud/image/upload/v1627229212/Front%20End/Kategori/Group_1245_lkzbsg.svg"
+									alt=""
+								/>
+
+								<img
+									class="d-block"
+									w-100
+									src="https://res.cloudinary.com/calvin-cloud/image/upload/v1627229206/Front%20End/Kategori/Group_1240_wtoabp.svg"
+									alt=""
+								/>
+							</div>
 						</div>
 					</div>
 					<button
