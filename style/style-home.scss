@@ -139,6 +139,7 @@ nav {
 
 .big-container {
 	background: linear-gradient(#e5e5e5 10px, white);
+	width: 100%;
 	.container-carousel-category {
 		padding-top: 40px;
 		margin-right: auto;
@@ -241,12 +242,20 @@ nav {
 	}
 	@media all and (max-width: 1320px) {
 		.container-carousel-trending-mobile {
-			padding-top: 50px;
-			width: 90%;
+			display: block;
+			padding-top: 40px;
 			margin-right: auto;
 			margin-left: auto;
-			display: flex;
-			justify-content: center;
+
+			width: 70vh;
+			.flexbox-container {
+				display: flex;
+				justify-content: space-evenly;
+				width: 100%;
+				margin-left: auto;
+				margin-right: auto;
+				padding-top: 30px;
+			}
 
 			.box {
 				width: 455px;
@@ -284,7 +293,7 @@ nav {
 			margin-right: auto;
 			margin-left: auto;
 
-			width: 90%;
+			width: 70vh;
 			.flexbox-container {
 				display: flex;
 				justify-content: space-evenly;
