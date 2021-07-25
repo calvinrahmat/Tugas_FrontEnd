@@ -1,26 +1,39 @@
 .box {
-  border: 10px dotted green;
-  width: 400px;
-  height: 400px;
+  width: 455px;
+  height: 200px;
+  border-radius: 8px;
 }
 
 .crop-to-fit {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  overflow: hidden;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  overflow: hidden;
 }
 
 .crop-to-fit img {
-  -ms-flex-negative: 0;
-      flex-shrink: 0;
-  min-width: 100%;
-  min-height: 100%;
+  width: 455px;
+  height: 300px;
+  -o-object-fit: fill;
+     object-fit: fill;
+}
+
+.items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+#buttonIndicator {
+  background-color: black;
 }
 /*# sourceMappingURL=carousel.css.map */

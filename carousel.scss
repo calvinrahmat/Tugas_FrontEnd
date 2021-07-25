@@ -1,18 +1,27 @@
 .box {
-	border: 10px dotted green;
-	width: 400px;
-	height: 400px;
+	width: 455px;
+	height: 200px;
+	border-radius: 8px;
 }
 
 .crop-to-fit {
-	display: flex;
-	justify-content: center;
 	align-items: center;
 	overflow: hidden;
+	display: flex;
+	justify-content: center;
 }
 
 .crop-to-fit img {
-	flex-shrink: 0;
-	min-width: 100%;
-	min-height: 100%;
+	width: 455px;
+	height: 300px;
+	object-fit: fill;
+}
+
+.items {
+	display: flex;
+	justify-content: space-evenly;
+}
+
+#buttonIndicator {
+	background-color: black;
 }

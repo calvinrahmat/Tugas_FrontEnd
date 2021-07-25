@@ -139,7 +139,8 @@ nav {
 
 .big-container {
 	background-image: linear-gradient(#e5e5e5 30px, white);
-	.container-carousel {
+	.container-carousel-category {
+		padding-top: 30px;
 		width: 90%;
 		margin-right: auto;
 		margin-left: auto;
@@ -159,6 +160,42 @@ nav {
 		p {
 			font-size: 12px;
 			color: #8e8e93;
+		}
+	}
+	.container-carousel-trending {
+		padding-top: 30px;
+		width: 90%;
+		margin-right: auto;
+		margin-left: auto;
+		li {
+			list-style-type: none;
+		}
+		.box {
+			width: 455px;
+			height: 200px;
+			border-radius: 8px;
+		}
+
+		.crop-to-fit {
+			align-items: center;
+			overflow: hidden;
+			display: flex;
+			justify-content: center;
+		}
+
+		.crop-to-fit img {
+			width: 455px;
+			height: 300px;
+			object-fit: fill;
+		}
+
+		.items {
+			display: flex;
+			justify-content: space-evenly;
+		}
+
+		#buttonIndicator {
+			background-color: black;
 		}
 	}
 }

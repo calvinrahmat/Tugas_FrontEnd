@@ -168,13 +168,14 @@ nav .filter-container .material-icons {
   background-image: linear-gradient(#e5e5e5 30px, white);
 }
 
-.big-container .container-carousel {
+.big-container .container-carousel-category {
+  padding-top: 30px;
   width: 90%;
   margin-right: auto;
   margin-left: auto;
 }
 
-.big-container .container-carousel .items {
+.big-container .container-carousel-category .items {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -182,20 +183,70 @@ nav .filter-container .material-icons {
       justify-content: space-around;
 }
 
-.big-container .container-carousel .items li {
+.big-container .container-carousel-category .items li {
   list-style-type: none;
 }
 
-.big-container .container-carousel .items img {
+.big-container .container-carousel-category .items img {
   border-radius: 8px;
 }
 
-.big-container .container-carousel h1 {
+.big-container .container-carousel-category h1 {
   font-size: 34px;
 }
 
-.big-container .container-carousel p {
+.big-container .container-carousel-category p {
   font-size: 12px;
   color: #8e8e93;
+}
+
+.big-container .container-carousel-trending {
+  padding-top: 30px;
+  width: 90%;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.big-container .container-carousel-trending li {
+  list-style-type: none;
+}
+
+.big-container .container-carousel-trending .box {
+  width: 455px;
+  height: 200px;
+  border-radius: 8px;
+}
+
+.big-container .container-carousel-trending .crop-to-fit {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.big-container .container-carousel-trending .crop-to-fit img {
+  width: 455px;
+  height: 300px;
+  -o-object-fit: fill;
+     object-fit: fill;
+}
+
+.big-container .container-carousel-trending .items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.big-container .container-carousel-trending #buttonIndicator {
+  background-color: black;
 }
 /*# sourceMappingURL=style-home.css.map */

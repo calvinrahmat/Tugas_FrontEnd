@@ -16,42 +16,101 @@
 		<title>test</title>
 	</head>
 	<body>
-		<div class="container-carousel">
-			<div id="carouselCategory" class="carousel slide" data-bs-ride="carousel">
+		<div class="container-carousel-trending">
+			<div id="carouselTrending" class="carousel slide" data-bs-ride="carousel">
+				<div class="carousel-indicators">
+					<button
+						id="buttonIndicator"
+						type="button"
+						data-bs-target="#carouselTrending"
+						data-bs-slide-to="0"
+						class="active"
+						aria-current="true"
+						aria-label="Slide 1"
+					></button>
+					<button
+						id="buttonIndicator"
+						type="button"
+						data-bs-target="#carouselTrending"
+						data-bs-slide-to="1"
+						aria-label="Slide 2"
+					></button>
+				</div>
 				<div class="carousel-inner">
 					<div class="carousel-item active">
-						<figure class="box crop-to-fit">
-							<img
-								src="https://res.cloudinary.com/calvin-cloud/image/upload/v1627188690/Front%20End/Trending/hijab_l0okhd.jpg"
-								alt=""
-							/>
-						</figure>
+						<ul class="items">
+							<li>
+								<figure class="box crop-to-fit">
+									<img
+										class="d-block"
+										w-100
+										src="https://res.cloudinary.com/calvin-cloud/image/upload/v1627188690/Front%20End/Trending/hijab_l0okhd.jpg"
+										alt=""
+									/>
+								</figure>
+							</li>
 
-						<figure class="box crop-to-fit">
-							<img
-								src="https://res.cloudinary.com/calvin-cloud/image/upload/v1627188690/Front%20End/Trending/streetwear_women_cs2fhe.jpg"
-								class="
-									img-fluid
-									${3|rounded-top,rounded-right,rounded-bottom,rounded-left,rounded-circle,|}
-								"
-								alt=""
-							/>
-						</figure>
+							<li>
+								<figure class="box crop-to-fit">
+									<img
+										class="d-block"
+										w-100
+										src="https://res.cloudinary.com/calvin-cloud/image/upload/v1627188690/Front%20End/Trending/streetwear_women_cs2fhe.jpg"
+										class="
+											img-fluid
+											${3|rounded-top,rounded-right,rounded-bottom,rounded-left,rounded-circle,|}
+										"
+										alt=""
+									/>
+								</figure>
+							</li>
+						</ul>
+					</div>
+					<div class="carousel-item">
+						<ul class="items">
+							<li>
+								<figure class="box crop-to-fit">
+									<img
+										class="d-block"
+										w-100
+										src="https://res.cloudinary.com/calvin-cloud/image/upload/v1627188691/Front%20End/Trending/men_mtohqy.jpg"
+										alt=""
+									/>
+								</figure>
+							</li>
+
+							<li>
+								<figure class="box crop-to-fit">
+									<img
+										class="d-block"
+										w-100
+										src="https://res.cloudinary.com/calvin-cloud/image/upload/v1627188690/Front%20End/Trending/cargo_kpnr8x.jpg"
+										class="
+											img-fluid
+											${3|rounded-top,rounded-right,rounded-bottom,rounded-left,rounded-circle,|}
+										"
+										alt=""
+									/>
+								</figure>
+							</li>
+						</ul>
 					</div>
 				</div>
 				<button
+					id="buttonNextPrev"
 					class="carousel-control-prev"
 					type="button"
-					data-bs-target="#carouselCategory"
+					data-bs-target="#carouselTrending"
 					data-bs-slide="prev"
 				>
 					<span class="carousel-control-prev-icon" aria-hidden="true"></span>
 					<span class="visually-hidden">Previous</span>
 				</button>
 				<button
+					id="buttonNextPrev"
 					class="carousel-control-next"
 					type="button"
-					data-bs-target="#carouselCategory"
+					data-bs-target="#carouselTrending"
 					data-bs-slide="next"
 				>
 					<span class="carousel-control-next-icon" aria-hidden="true"></span>
