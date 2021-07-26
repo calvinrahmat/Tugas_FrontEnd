@@ -166,7 +166,14 @@ nav .filter-container .material-icons {
 
 .big-container {
   background: linear-gradient(#e5e5e5 10px, white);
-  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .big-container .container-carousel-category {
@@ -292,6 +299,9 @@ nav .filter-container .material-icons {
 }
 
 @media all and (max-width: 1320px) {
+  .big-container body {
+    background: red;
+  }
   .big-container .container-carousel-trending-mobile {
     display: block;
     padding-top: 40px;
@@ -338,11 +348,15 @@ nav .filter-container .material-icons {
     background-image: url("https://res.cloudinary.com/calvin-cloud/image/upload/v1627227153/Front%20End/Group_1163_ewy2xs.svg");
     width: 50px;
     height: 50px;
+    left: 30px;
+    position: relative;
   }
   .big-container .container-carousel-trending-mobile .carousel-control-next-icon {
     background-image: url("https://res.cloudinary.com/calvin-cloud/image/upload/v1627227176/Front%20End/Group_1164_zb5vhd.svg");
     width: 50px;
     height: 50px;
+    right: 30px;
+    position: relative;
   }
   .big-container .container-carousel-category-mobile {
     display: block;
@@ -376,11 +390,15 @@ nav .filter-container .material-icons {
     background-image: url("https://res.cloudinary.com/calvin-cloud/image/upload/v1627227153/Front%20End/Group_1163_ewy2xs.svg");
     width: 50px;
     height: 50px;
+    left: 30px;
+    position: relative;
   }
   .big-container .container-carousel-category-mobile .carousel-control-next-icon {
     background-image: url("https://res.cloudinary.com/calvin-cloud/image/upload/v1627227176/Front%20End/Group_1164_zb5vhd.svg");
     width: 50px;
     height: 50px;
+    right: 30px;
+    position: relative;
   }
   .big-container .container-carousel-category {
     display: none;
