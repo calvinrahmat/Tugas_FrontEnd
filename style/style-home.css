@@ -169,9 +169,9 @@ nav .filter-container .material-icons {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
 }
@@ -180,7 +180,7 @@ nav .filter-container .material-icons {
   padding-top: 40px;
   margin-right: auto;
   margin-left: auto;
-  width: 90%;
+  width: 70%;
 }
 
 .big-container .container-carousel-category .flexbox-container {
@@ -197,13 +197,17 @@ nav .filter-container .material-icons {
 }
 
 .big-container .container-carousel-category h1 {
-  padding-left: 1.3em;
+  padding-left: 1em;
   font-size: 34px;
+  top: 20px;
+  position: relative;
 }
 
 .big-container .container-carousel-category p {
-  padding-left: 2.3em;
+  padding-left: 1.8em;
   font-size: 20px;
+  top: 20px;
+  position: relative;
   color: #8e8e93;
 }
 
@@ -211,12 +215,16 @@ nav .filter-container .material-icons {
   background-image: url("https://res.cloudinary.com/calvin-cloud/image/upload/v1627227153/Front%20End/Group_1163_ewy2xs.svg");
   width: 50px;
   height: 50px;
+  right: 50px;
+  position: relative;
 }
 
 .big-container .container-carousel-category .carousel-control-next-icon {
   background-image: url("https://res.cloudinary.com/calvin-cloud/image/upload/v1627227176/Front%20End/Group_1164_zb5vhd.svg");
   width: 50px;
   height: 50px;
+  left: 50px;
+  position: relative;
 }
 
 .big-container .container-carousel-category-mobile {
@@ -229,7 +237,7 @@ nav .filter-container .material-icons {
 
 .big-container .container-carousel-trending {
   padding-top: 50px;
-  width: 90%;
+  width: 70%;
   margin-right: auto;
   margin-left: auto;
 }
@@ -240,7 +248,6 @@ nav .filter-container .material-icons {
   display: flex;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  width: 80%;
   margin-left: auto;
   margin-right: auto;
 }
@@ -299,9 +306,6 @@ nav .filter-container .material-icons {
 }
 
 @media all and (max-width: 1320px) {
-  .big-container body {
-    background: red;
-  }
   .big-container .container-carousel-trending-mobile {
     display: block;
     padding-top: 40px;
@@ -406,5 +410,43 @@ nav .filter-container .material-icons {
   .big-container .container-carousel-trending {
     display: none;
   }
+  .big-container .container-items h1 {
+    position: relative;
+    right: 2em;
+    font-size: 34px;
+  }
+  .big-container .container-items p {
+    padding-left: 1.6em;
+    position: relative;
+    right: 3.2em;
+    font-size: 20px;
+    color: #8e8e93;
+  }
+}
+
+.big-container .container-items {
+  padding-top: 50px;
+  width: 70%;
+}
+
+.big-container .container-items h1 {
+  padding-left: 1em;
+  font-size: 34px;
+}
+
+.big-container .container-items p {
+  padding-left: 1.6em;
+  font-size: 20px;
+  color: #8e8e93;
+}
+
+.item {
+  height: 300px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 /*# sourceMappingURL=style-home.css.map */

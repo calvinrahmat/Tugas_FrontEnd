@@ -140,14 +140,15 @@ nav {
 .big-container {
 	background: linear-gradient(#e5e5e5 10px, white);
 	display: flex;
-	justify-content: space-evenly;
+	justify-content: center;
 	flex-wrap: wrap;
 	.container-carousel-category {
 		padding-top: 40px;
 		margin-right: auto;
 		margin-left: auto;
+		width: 70%;
+		//background: yellow;
 
-		width: 90%;
 		.flexbox-container {
 			display: flex;
 			justify-content: space-evenly;
@@ -155,27 +156,36 @@ nav {
 			margin-left: auto;
 			margin-right: auto;
 			padding-top: 30px;
+			//background: green;
 		}
 
 		h1 {
-			padding-left: 1.3em;
+			padding-left: 1em;
 			font-size: 34px;
+			top: 20px;
+			position: relative;
 		}
 		p {
-			padding-left: 2.3em;
+			padding-left: 1.8em;
 			font-size: 20px;
+			top: 20px;
+			position: relative;
 			color: #8e8e93;
 		}
 		.carousel-control-prev-icon {
 			background-image: url('https://res.cloudinary.com/calvin-cloud/image/upload/v1627227153/Front%20End/Group_1163_ewy2xs.svg');
 			width: 50px;
 			height: 50px;
+			right: 50px;
+			position: relative;
 		}
 
 		.carousel-control-next-icon {
 			background-image: url('https://res.cloudinary.com/calvin-cloud/image/upload/v1627227176/Front%20End/Group_1164_zb5vhd.svg');
 			width: 50px;
 			height: 50px;
+			left: 50px;
+			position: relative;
 		}
 	}
 
@@ -187,16 +197,16 @@ nav {
 	}
 	.container-carousel-trending {
 		padding-top: 50px;
-		width: 90%;
+		width: 70%;
 		margin-right: auto;
 		margin-left: auto;
-
+		//background: blue;
 		.flexbox-container {
 			display: flex;
 			justify-content: space-around;
-			width: 80%;
 			margin-left: auto;
 			margin-right: auto;
+			//background: lightblue;
 		}
 		.box {
 			width: 455px;
@@ -243,9 +253,6 @@ nav {
 		}
 	}
 	@media all and (max-width: 1320px) {
-		body {
-			background: red;
-		}
 		.container-carousel-trending-mobile {
 			display: block;
 			padding-top: 40px;
@@ -344,5 +351,40 @@ nav {
 		.container-carousel-trending {
 			display: none;
 		}
+		.container-items {
+			h1 {
+				position: relative;
+				right: 2em;
+				font-size: 34px;
+			}
+			p {
+				padding-left: 1.6em;
+				position: relative;
+				right: 3.2em;
+				font-size: 20px;
+				color: #8e8e93;
+			}
+		}
 	}
+	.container-items {
+		padding-top: 50px;
+		width: 70%;
+		//background: grey;
+
+		h1 {
+			padding-left: 1em;
+			font-size: 34px;
+		}
+		p {
+			padding-left: 1.6em;
+			font-size: 20px;
+			color: #8e8e93;
+		}
+	}
+}
+
+.item {
+	height: 300px;
+	display: flex;
+	justify-content: center;
 }
