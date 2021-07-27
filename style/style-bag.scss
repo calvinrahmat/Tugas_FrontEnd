@@ -19,6 +19,10 @@ nav {
 		margin-left: auto;
 		margin-right: auto;
 		.burger-container {
+			display: flex;
+			justify-content: space-between;
+			margin-left: 35em;
+			position: absolute;
 			.burger {
 				display: none;
 			}
@@ -151,8 +155,6 @@ nav {
 				position: absolute;
 			}
 
-			.filter-container {
-			}
 			.search-container {
 				margin-left: 170px;
 				position: relative;
@@ -175,8 +177,6 @@ nav {
 				position: absolute;
 			}
 
-			.filter-container {
-			}
 			.search-container {
 				margin-left: 170px;
 				position: relative;
@@ -190,14 +190,19 @@ nav {
 
 .big-container {
 	height: 100vh;
+	width: 100vh;
 	display: flex;
 	justify-content: center;
 	padding-top: 60px;
-	background: linear-gradient(#f9f9f9 5px, white);
+	background-color: linear-gradient(#f9f9f9 5px, white);
 
 	.bag-container {
 		width: 80%;
 		justify-content: center;
+
+		@media all and(max-width:900px) {
+			width: 100%;
+		}
 		h1 {
 			font-weight: bold;
 			font-size: 34px;
@@ -206,9 +211,9 @@ nav {
 			display: flex;
 
 			justify-content: space-between;
-
+			width: 720px;
 			align-items: center;
-			width: 60%;
+
 			border-radius: 4px;
 			margin-top: 30px;
 			height: 70px;
@@ -255,13 +260,15 @@ nav {
 					color: #db3022;
 					font-weight: 500;
 				}
+				@media all and (max-width: 1024px) {
+				}
 			}
 		}
 		.items-container {
 			display: flex;
 			flex-direction: column;
-			width: 60%;
 
+			width: 720px;
 			height: 120px;
 			.item1-container {
 				display: flex;
@@ -272,7 +279,7 @@ nav {
 				color: #8e8e93;
 				border-radius: 4px;
 				padding-top: 35px;
-				padding-bottom: 30px;
+				padding-bottom: 35px;
 				.wrap-checkbox-item {
 					display: flex;
 					justify-content: center;
@@ -353,21 +360,136 @@ nav {
 						color: #8e8e93;
 					}
 				}
-			}
-			.price {
-				display: flex;
-				justify-content: center;
-				align-items: center;
-				display: flex;
-				height: 70px;
-				margin-right: 3em;
+				.price {
+					display: flex;
+					justify-content: center;
+					align-items: center;
+					display: flex;
+					height: 70px;
+					margin-right: 3em;
 
-				h1 {
-					color: black;
-					font-size: 16px;
-					font-weight: 600;
+					h1 {
+						color: black;
+						font-size: 16px;
+						font-weight: 600;
+					}
 				}
 			}
+
+			.item2-container {
+				display: flex;
+				justify-content: space-between;
+				align-items: center;
+				margin-top: 30px;
+				box-shadow: 0px 0px 10px;
+				color: #8e8e93;
+				border-radius: 4px;
+				padding-top: 35px;
+				padding-bottom: 35px;
+				width: 720px;
+				.wrap-checkbox-item {
+					display: flex;
+					justify-content: center;
+					align-items: center;
+
+					.check-box {
+						display: flex;
+						justify-content: center;
+						align-items: center;
+						margin-left: 0.7em;
+						height: 25px;
+						width: 25px;
+						border-radius: 4px;
+						background: #db3022;
+
+						.check-icon {
+							color: white;
+						}
+					}
+					.item-desc {
+						display: flex;
+						flex-direction: column;
+						justify-content: center;
+						align-items: flex-start;
+						flex-wrap: wrap;
+						color: black;
+						h1 {
+							font-size: 16px;
+							color: black;
+						}
+						p {
+							font-size: 12px;
+							color: #8e8e93;
+						}
+					}
+					.photo-box {
+						width: 110px;
+						height: 71px;
+
+						justify-content: center;
+						align-items: center;
+						img {
+							margin-left: 1.2em;
+						}
+					}
+				}
+				.button-container {
+					display: flex;
+
+					width: 112px;
+					justify-content: space-between;
+					align-items: center;
+					h1 {
+						top: 5px;
+						position: relative;
+						font-size: 16px;
+						color: black;
+					}
+
+					.remove-icon {
+						width: 36px;
+						height: 36px;
+						background: #d4d4d4;
+						border-radius: 50%;
+						display: flex;
+						justify-content: center;
+						align-items: center;
+						color: white;
+					}
+					.add-icon {
+						width: 33px;
+						height: 33px;
+						border-radius: 50%;
+						display: flex;
+						justify-content: center;
+						align-items: center;
+						box-shadow: 0px 0px 5px;
+						color: #8e8e93;
+					}
+				}
+				.price {
+					display: flex;
+					justify-content: center;
+					align-items: center;
+					display: flex;
+					height: 70px;
+					margin-right: 3em;
+
+					h1 {
+						color: black;
+						font-size: 16px;
+						font-weight: 600;
+					}
+				}
+			}
+		}
+		.shopping-summary {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			width: 30%;
+			height: 200px;
+			border: 2px solid red;
 		}
 	}
 }
