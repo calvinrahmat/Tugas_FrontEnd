@@ -16,6 +16,7 @@
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
+  background: white;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -196,11 +197,11 @@
       -ms-flex-pack: center;
           justify-content: center;
   padding-top: 60px;
+  background-color: #f9f9f9;
 }
 
 .big-container .bag-container {
   height: 100vh;
-  width: 100vh;
   width: 70%;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
@@ -208,12 +209,6 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-}
-
-@media all and (max-width: 900px) {
-  .big-container .bag-container {
-    width: 100%;
-  }
 }
 
 @media all and (max-width: 1438px) {
@@ -237,7 +232,7 @@
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  width: 720px;
+  width: 100%;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -322,7 +317,6 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  width: 720px;
   height: 120px;
 }
 
@@ -489,7 +483,7 @@
           align-items: center;
   display: flex;
   height: 70px;
-  margin-right: 3em;
+  margin-right: 1em;
 }
 
 .big-container .bag-container .left-container .items-container .item1-container .price h1 {
@@ -515,7 +509,6 @@
   border-radius: 4px;
   padding-top: 35px;
   padding-bottom: 35px;
-  width: 720px;
 }
 
 .big-container .bag-container .left-container .items-container .item2-container .wrap-checkbox-item {
@@ -662,7 +655,7 @@
           align-items: center;
   display: flex;
   height: 70px;
-  margin-right: 3em;
+  margin-right: 1em;
 }
 
 .big-container .bag-container .left-container .items-container .item2-container .price h1 {
@@ -685,7 +678,6 @@
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  width: 720px;
   height: 140px;
   border-radius: 4px;
   -webkit-box-shadow: 0px 0px 10px;
@@ -713,7 +705,6 @@
 }
 
 .big-container .bag-container .left-container .shopping-summary-mobile .price {
-  right: 1.5em;
   position: relative;
 }
 
@@ -798,5 +789,11 @@
   border-radius: 25px;
   background: #db3022;
   border: none;
+}
+
+@media all and (max-width: 1024px) {
+  .big-container .bag-container {
+    width: 100%;
+  }
 }
 /*# sourceMappingURL=style-bag.css.map */

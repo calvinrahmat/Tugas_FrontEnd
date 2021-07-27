@@ -1,8 +1,8 @@
-var lc = document.getElementById('login-customer');
-var ls = document.getElementById('login-seller');
-var btn = document.getElementById('button');
-var btnCustColor = document.getElementById('tog-cust');
-var btnSellerColor = document.getElementById('tog-seller');
+let lc = document.getElementById('login-customer');
+let ls = document.getElementById('login-seller');
+let btn = document.getElementById('button');
+let btnCustColor = document.getElementById('tog-cust');
+let btnSellerColor = document.getElementById('tog-seller');
 
 function loginSeller() {
 	lc.style.left = '-400px';

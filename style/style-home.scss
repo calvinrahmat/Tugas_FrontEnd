@@ -12,8 +12,11 @@ body {
 
 nav {
 	.nav-container {
-		display: flex;
+		background-color: white;
 
+		top: 0; /* Position the navbar at the top of the page */
+		width: 100%; /* Full width */
+		display: flex;
 		height: 90px;
 		align-items: center;
 		width: 70%;
