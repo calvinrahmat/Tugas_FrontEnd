@@ -32,47 +32,58 @@
 		<!-- navigation bar -->
 		<nav>
 			<a href="#">
-				<img
-					class="logo"
-					src="https://res.cloudinary.com/calvin-cloud/image/upload/v1627004541/Front%20End/logo_blanja_jtyc2a.svg"
-					alt="logo blanja"
-				/>
-			</a>
-			<div class="search-container">
-				<table class="elementContainer">
-					<tr>
-						<td>
-							<input type="text" class="search" placeholder="Search" />
-						</td>
-						<td>
-							<a href="#" class="material-icons">search</a>
-						</td>
-					</tr>
-				</table>
-			</div>
-			<div class="filter-container">
-				<a href="#" class="material-icons">filter_alt</a>
-			</div>
-			<ul class="nav-menu">
-				<li>
-					<a href="#" class="material-icons">shopping_cart</a>
-				</li>
-				<li>
-					<a href="#" id="btn-login" class="btn btn-primary" role="button"
-						>login</a
-					>
-				</li>
-				<li>
-					<a href="#" id="btn-signup" class="btn btn-outline-primary">Signup</a>
-				</li>
-			</ul>
+				<div class="container-fluid nav-container">
+					<div class="logo">
+						<a href="">
+							<img
+								src="https://res.cloudinary.com/calvin-cloud/image/upload/v1627004541/Front%20End/logo_blanja_jtyc2a.svg"
+								alt=""
+							/>
+						</a>
+					</div>
 
-			<div class="burger">
-				<img
-					src="https://res.cloudinary.com/calvin-cloud/image/upload/v1627007004/Front%20End/icons8-menu_aps4ku.svg"
-					alt=""
-				/>
-			</div>
+					<div class="burger-container">
+						<div class="burger">
+							<img
+								src="https://res.cloudinary.com/calvin-cloud/image/upload/v1627007004/Front%20End/icons8-menu_aps4ku.svg"
+								alt=""
+							/>
+						</div>
+					</div>
+
+					<div class="search-container">
+						<table class="elementContainer">
+							<tr>
+								<td>
+									<input type="text" class="search" placeholder="Search" />
+								</td>
+								<td>
+									<a href="#" class="material-icons">search</a>
+								</td>
+							</tr>
+						</table>
+					</div>
+					<div class="filter-container">
+						<div class="material-icons filter">filter_alt</div>
+					</div>
+					<div class="user-menu">
+						<a href="#"
+							><div class="material-icons cart-icon">shopping_cart</div></a
+						>
+						<a href="#"
+							><div class="material-icons notif-icon">notifications</div></a
+						>
+						<a href="#"> <div class="material-icons email-icon">email</div></a>
+
+						<div class="photo-box">
+							<img
+								src="https://res.cloudinary.com/calvin-cloud/image/upload/v1627339637/Front%20End/profile_yzozml.jpg"
+								alt="profile"
+							/>
+						</div>
+					</div>
+				</div>
+			</a>
 		</nav>
 
 		<div class="container-fluid big-container">

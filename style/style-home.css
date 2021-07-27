@@ -10,81 +10,66 @@ body {
   background: #e5e5e5;
 }
 
-nav {
+nav .nav-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  height: 90px;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  min-height: 8vh;
-  background: white;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-nav .nav-menu {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  width: 30%;
-}
-
-nav .nav-menu .material-icons {
-  color: #8e8e93;
-  top: 12px;
-  position: relative;
-}
-
-nav .nav-menu #btn-login {
-  color: white;
-  background-color: #db3022;
-  border-radius: 25px;
-  top: 6px;
-  position: relative;
-}
-
-nav .nav-menu #btn-signup {
-  color: #8e8e93;
-  border: 1px solid #8e8e93;
-  background-color: white;
-  border-radius: 25px;
-  top: 6px;
-  position: relative;
-}
-
-nav .nav-menu a {
-  color: black;
-  text-decoration: none;
-}
-
-nav .nav-menu li {
-  list-style: none;
-}
-
-nav .burger {
+nav .nav-container .burger-container .burger {
   display: none;
 }
 
-nav .search-container {
-  width: 30%;
+nav .nav-container .logo {
+  margin-right: auto;
+}
+
+nav .nav-container .filter-container {
+  border: 1px solid #8e8e93;
+  height: 40px;
+  padding: 0 10px;
+  border-radius: 12px;
+  right: 10px;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  left: 1em;
+}
+
+nav .nav-container .filter-container .filter {
+  color: #8e8e93;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+nav .nav-container .search-container {
+  width: 40%;
   height: 40px;
   border: 1px solid #8e8e93;
   padding: 0px 20px;
+  margin-left: 0px;
   border-radius: 23px;
-  right: 30px;
   position: relative;
 }
 
-nav .search-container .elementContainer {
+nav .nav-container .search-container .elementContainer {
   width: 100%;
   height: 100%;
   vertical-align: middle;
 }
 
-nav .search-container .elementContainer .search {
+nav .nav-container .search-container .elementContainer .search {
   border: none;
   height: 100%;
   width: 100%;
@@ -93,74 +78,152 @@ nav .search-container .elementContainer .search {
   font-size: medium;
 }
 
-nav .search-container .elementContainer .search:focus {
+nav .nav-container .search-container .elementContainer .search:focus {
   outline: none;
 }
 
-nav .search-container .elementContainer .material-icons {
+nav .nav-container .search-container .elementContainer .material-icons {
   left: 5px;
   top: 3px;
   position: relative;
   color: #8e8e93;
 }
 
-nav .search-container .elementContainer a {
+nav .nav-container .search-container .elementContainer a {
   text-decoration: none;
 }
 
-nav .filter-container {
-  height: 40px;
-  border: 1px solid #8e8e93;
-  padding: 0 10px;
-  border-radius: 12px;
-  right: 10px;
-  position: relative;
+nav .nav-container .user-menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 90px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 20%;
+  margin-left: auto;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
 }
 
-nav .filter-container a {
-  text-decoration: none;
+nav .nav-container .user-menu .photo-box {
+  height: 30px;
+  width: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 50%;
 }
 
-nav .filter-container .material-icons {
+nav .nav-container .user-menu .photo-box img {
+  width: 30px;
+  -webkit-clip-path: circle();
+          clip-path: circle();
+}
+
+nav .nav-container .user-menu .cart-icon {
   color: #8e8e93;
-  top: 5px;
-  position: relative;
-  outline: red;
 }
 
-@media screen and (max-width: 1024px) {
-  .nav-menu {
-    width: 60%;
-  }
+nav .nav-container .user-menu .notif-icon {
+  color: #8e8e93;
 }
 
-@media screen and (max-width: 768px) {
-  .nav-menu {
-    position: absolute;
-    height: 92vh;
-    top: 8vh;
-    background-color: 0;
+nav .nav-container .user-menu .email-icon {
+  color: #8e8e93;
+}
+
+@media all and (max-width: 760px) {
+  nav .nav-container {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    height: 90px;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    width: 50%;
-    opacity: 0;
+    width: 100%;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
   }
-  nav .burger {
+  nav .nav-container .logo {
+    position: absolute;
+  }
+  nav .nav-container .user-menu {
+    display: none;
+  }
+  nav .nav-container .burger-container .burger {
     display: block;
+    right: 0px;
+    position: relative;
   }
-  .filter-container {
+  nav .nav-container .filter-container {
     display: none;
   }
-  .search-container {
+  nav .nav-container .search-container {
     display: none;
+  }
+}
+
+@media all and (max-width: 768px) {
+  nav .nav-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    height: 90px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 90%;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  nav .nav-container .logo {
+    position: absolute;
+  }
+  nav .nav-container .search-container {
+    margin-left: 170px;
+    position: relative;
+  }
+  nav .nav-container .user-menu {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+}
+
+@media all and (max-width: 1024px) {
+  nav .nav-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    height: 90px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 90%;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  nav .nav-container .logo {
+    position: absolute;
+  }
+  nav .nav-container .search-container {
+    margin-left: 170px;
+    position: relative;
+  }
+  nav .nav-container .user-menu {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
   }
 }
 
