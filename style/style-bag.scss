@@ -12,7 +12,7 @@
 .navbar-wrapper {
 	display: flex;
 	justify-content: space-evenly;
-
+	background: white;
 	align-items: center;
 
 	.navbar-nav {
@@ -142,18 +142,14 @@
 	display: flex;
 	justify-content: center;
 	padding-top: 60px;
-	//background-color: #f9f9f9;
+	background-color: #f9f9f9;
 
 	.bag-container {
 		height: 100vh;
-		width: 100vh;
 		width: 70%;
 		justify-content: space-between;
 		display: flex;
 
-		@media all and(max-width:900px) {
-			width: 100%;
-		}
 		@media all and(max-width:1438px) {
 			.right-container {
 				display: none;
@@ -172,7 +168,7 @@
 				display: flex;
 
 				justify-content: space-between;
-				width: 720px;
+				width: 100%;
 				align-items: center;
 
 				border-radius: 4px;
@@ -227,7 +223,6 @@
 				display: flex;
 				flex-direction: column;
 
-				width: 720px;
 				height: 120px;
 				.item1-container {
 					display: flex;
@@ -325,7 +320,7 @@
 						align-items: center;
 						display: flex;
 						height: 70px;
-						margin-right: 3em;
+						margin-right: 1em;
 
 						h1 {
 							color: black;
@@ -345,7 +340,7 @@
 					border-radius: 4px;
 					padding-top: 35px;
 					padding-bottom: 35px;
-					width: 720px;
+
 					.wrap-checkbox-item {
 						display: flex;
 						justify-content: center;
@@ -432,7 +427,7 @@
 						align-items: center;
 						display: flex;
 						height: 70px;
-						margin-right: 3em;
+						margin-right: 1em;
 
 						h1 {
 							color: black;
@@ -449,7 +444,7 @@
 				display: flex;
 				flex-direction: column;
 				justify-content: space-between;
-				width: 720px;
+
 				height: 140px;
 				border-radius: 4px;
 				box-shadow: 0px 0px 10px;
@@ -469,7 +464,7 @@
 				}
 				top: 75px;
 				.price {
-					right: 1.5em;
+					//right: 1.5em;
 					position: relative;
 					h1 {
 						font-size: 18px;
@@ -533,6 +528,11 @@
 					border: none;
 				}
 			}
+		}
+	}
+	@media all and(max-width:1024px) {
+		.bag-container {
+			width: 100%;
 		}
 	}
 }
