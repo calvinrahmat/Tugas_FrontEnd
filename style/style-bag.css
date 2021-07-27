@@ -17,7 +17,7 @@ nav .nav-container {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 80%;
+  width: 70%;
   margin-left: auto;
   margin-right: auto;
 }
@@ -251,7 +251,7 @@ nav .nav-container .user-menu .email-icon {
 .big-container .bag-container {
   height: 100vh;
   width: 100vh;
-  width: 80%;
+  width: 70%;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;

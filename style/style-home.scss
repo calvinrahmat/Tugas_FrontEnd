@@ -16,7 +16,7 @@ nav {
 
 		height: 90px;
 		align-items: center;
-		width: 80%;
+		width: 70%;
 		margin-left: auto;
 		margin-right: auto;
 		.burger-container {
@@ -86,25 +86,29 @@ nav {
 			margin-left: auto;
 
 			justify-content: space-evenly;
-			.photo-box {
-				height: 30px;
-				width: 30px;
-				display: flex;
-				align-items: center;
-				border-radius: 50%;
-				img {
-					width: 30px;
-					clip-path: circle();
-				}
-			}
+
 			.cart-icon {
 				color: #8e8e93;
+				margin-right: 1em;
+				position: relative;
 			}
-			.notif-icon {
-				color: #8e8e93;
+			.button-login {
+				background-color: #db3022;
+				border-radius: 25px;
+				width: 100px;
+				height: 36px;
+				padding-bottom: 2em;
+				position: relative;
+				border: none;
 			}
-			.email-icon {
+			.button-signup {
+				background-color: white;
 				color: #8e8e93;
+				border: 1px solid #8e8e93;
+				border-radius: 25px;
+				width: 100px;
+				height: 36px;
+				padding-bottom: 2em;
 			}
 		}
 	}
@@ -186,7 +190,7 @@ nav {
 }
 
 .big-container {
-	background: linear-gradient(#e5e5e5 10px, white);
+	background: #f9f9f9;
 	display: flex;
 	justify-content: center;
 	flex-wrap: wrap;
