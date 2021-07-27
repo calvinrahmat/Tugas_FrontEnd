@@ -238,8 +238,6 @@ nav .nav-container .user-menu .email-icon {
 }
 
 .big-container {
-  height: 100vh;
-  width: 100vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -247,14 +245,19 @@ nav .nav-container .user-menu .email-icon {
       -ms-flex-pack: center;
           justify-content: center;
   padding-top: 60px;
-  background-color: linear-gradient(#f9f9f9 5px, white);
+  background-color: #f9f9f9;
 }
 
 .big-container .bag-container {
+  height: 100vh;
+  width: 100vh;
   width: 80%;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 @media all and (max-width: 900px) {
@@ -263,12 +266,21 @@ nav .nav-container .user-menu .email-icon {
   }
 }
 
+@media all and (max-width: 1438px) {
+  .big-container .bag-container .right-container {
+    display: none;
+  }
+  .big-container .bag-container .shopping-summary-mobile {
+    display: block;
+  }
+}
+
 .big-container .bag-container h1 {
   font-weight: bold;
   font-size: 34px;
 }
 
-.big-container .bag-container .select-container {
+.big-container .bag-container .left-container .select-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -287,7 +299,7 @@ nav .nav-container .user-menu .email-icon {
   color: #8e8e93;
 }
 
-.big-container .bag-container .select-container .wrap-checkbox-desc {
+.big-container .bag-container .left-container .select-container .wrap-checkbox-desc {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -299,7 +311,7 @@ nav .nav-container .user-menu .email-icon {
           align-items: center;
 }
 
-.big-container .bag-container .select-container .wrap-checkbox-desc .check-box {
+.big-container .bag-container .left-container .select-container .wrap-checkbox-desc .check-box {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -316,11 +328,11 @@ nav .nav-container .user-menu .email-icon {
   background: #db3022;
 }
 
-.big-container .bag-container .select-container .wrap-checkbox-desc .check-box .check-icon {
+.big-container .bag-container .left-container .select-container .wrap-checkbox-desc .check-box .check-icon {
   color: white;
 }
 
-.big-container .bag-container .select-container .wrap-checkbox-desc .select-items {
+.big-container .bag-container .left-container .select-container .wrap-checkbox-desc .select-items {
   height: 70px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -330,14 +342,14 @@ nav .nav-container .user-menu .email-icon {
   margin-left: 1em;
 }
 
-.big-container .bag-container .select-container .wrap-checkbox-desc .select-items p {
+.big-container .bag-container .left-container .select-container .wrap-checkbox-desc .select-items p {
   top: 23px;
   position: relative;
   color: black;
   font-weight: bold;
 }
 
-.big-container .bag-container .select-container .delete-box {
+.big-container .bag-container .left-container .select-container .delete-box {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -345,14 +357,14 @@ nav .nav-container .user-menu .email-icon {
   margin-right: 1em;
 }
 
-.big-container .bag-container .select-container .delete-box p {
+.big-container .bag-container .left-container .select-container .delete-box p {
   top: 23px;
   position: relative;
   color: #db3022;
   font-weight: 500;
 }
 
-.big-container .bag-container .items-container {
+.big-container .bag-container .left-container .items-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -364,7 +376,7 @@ nav .nav-container .user-menu .email-icon {
   height: 120px;
 }
 
-.big-container .bag-container .items-container .item1-container {
+.big-container .bag-container .left-container .items-container .item1-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -383,7 +395,7 @@ nav .nav-container .user-menu .email-icon {
   padding-bottom: 35px;
 }
 
-.big-container .bag-container .items-container .item1-container .wrap-checkbox-item {
+.big-container .bag-container .left-container .items-container .item1-container .wrap-checkbox-item {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -395,7 +407,7 @@ nav .nav-container .user-menu .email-icon {
           align-items: center;
 }
 
-.big-container .bag-container .items-container .item1-container .wrap-checkbox-item .check-box {
+.big-container .bag-container .left-container .items-container .item1-container .wrap-checkbox-item .check-box {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -412,11 +424,11 @@ nav .nav-container .user-menu .email-icon {
   background: #db3022;
 }
 
-.big-container .bag-container .items-container .item1-container .wrap-checkbox-item .check-box .check-icon {
+.big-container .bag-container .left-container .items-container .item1-container .wrap-checkbox-item .check-box .check-icon {
   color: white;
 }
 
-.big-container .bag-container .items-container .item1-container .wrap-checkbox-item .item-desc {
+.big-container .bag-container .left-container .items-container .item1-container .wrap-checkbox-item .item-desc {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -435,17 +447,17 @@ nav .nav-container .user-menu .email-icon {
   color: black;
 }
 
-.big-container .bag-container .items-container .item1-container .wrap-checkbox-item .item-desc h1 {
+.big-container .bag-container .left-container .items-container .item1-container .wrap-checkbox-item .item-desc h1 {
   font-size: 16px;
   color: black;
 }
 
-.big-container .bag-container .items-container .item1-container .wrap-checkbox-item .item-desc p {
+.big-container .bag-container .left-container .items-container .item1-container .wrap-checkbox-item .item-desc p {
   font-size: 12px;
   color: #8e8e93;
 }
 
-.big-container .bag-container .items-container .item1-container .wrap-checkbox-item .photo-box {
+.big-container .bag-container .left-container .items-container .item1-container .wrap-checkbox-item .photo-box {
   width: 110px;
   height: 71px;
   -webkit-box-pack: center;
@@ -456,11 +468,11 @@ nav .nav-container .user-menu .email-icon {
           align-items: center;
 }
 
-.big-container .bag-container .items-container .item1-container .wrap-checkbox-item .photo-box img {
+.big-container .bag-container .left-container .items-container .item1-container .wrap-checkbox-item .photo-box img {
   margin-left: 1.2em;
 }
 
-.big-container .bag-container .items-container .item1-container .button-container {
+.big-container .bag-container .left-container .items-container .item1-container .button-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -473,14 +485,14 @@ nav .nav-container .user-menu .email-icon {
           align-items: center;
 }
 
-.big-container .bag-container .items-container .item1-container .button-container h1 {
+.big-container .bag-container .left-container .items-container .item1-container .button-container h1 {
   top: 5px;
   position: relative;
   font-size: 16px;
   color: black;
 }
 
-.big-container .bag-container .items-container .item1-container .button-container .remove-icon {
+.big-container .bag-container .left-container .items-container .item1-container .button-container .remove-icon {
   width: 36px;
   height: 36px;
   background: #d4d4d4;
@@ -497,7 +509,7 @@ nav .nav-container .user-menu .email-icon {
   color: white;
 }
 
-.big-container .bag-container .items-container .item1-container .button-container .add-icon {
+.big-container .bag-container .left-container .items-container .item1-container .button-container .add-icon {
   width: 33px;
   height: 33px;
   border-radius: 50%;
@@ -515,7 +527,7 @@ nav .nav-container .user-menu .email-icon {
   color: #8e8e93;
 }
 
-.big-container .bag-container .items-container .item1-container .price {
+.big-container .bag-container .left-container .items-container .item1-container .price {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -530,13 +542,13 @@ nav .nav-container .user-menu .email-icon {
   margin-right: 3em;
 }
 
-.big-container .bag-container .items-container .item1-container .price h1 {
+.big-container .bag-container .left-container .items-container .item1-container .price h1 {
   color: black;
   font-size: 16px;
   font-weight: 600;
 }
 
-.big-container .bag-container .items-container .item2-container {
+.big-container .bag-container .left-container .items-container .item2-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -556,7 +568,7 @@ nav .nav-container .user-menu .email-icon {
   width: 720px;
 }
 
-.big-container .bag-container .items-container .item2-container .wrap-checkbox-item {
+.big-container .bag-container .left-container .items-container .item2-container .wrap-checkbox-item {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -568,7 +580,7 @@ nav .nav-container .user-menu .email-icon {
           align-items: center;
 }
 
-.big-container .bag-container .items-container .item2-container .wrap-checkbox-item .check-box {
+.big-container .bag-container .left-container .items-container .item2-container .wrap-checkbox-item .check-box {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -585,11 +597,11 @@ nav .nav-container .user-menu .email-icon {
   background: #db3022;
 }
 
-.big-container .bag-container .items-container .item2-container .wrap-checkbox-item .check-box .check-icon {
+.big-container .bag-container .left-container .items-container .item2-container .wrap-checkbox-item .check-box .check-icon {
   color: white;
 }
 
-.big-container .bag-container .items-container .item2-container .wrap-checkbox-item .item-desc {
+.big-container .bag-container .left-container .items-container .item2-container .wrap-checkbox-item .item-desc {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -608,17 +620,17 @@ nav .nav-container .user-menu .email-icon {
   color: black;
 }
 
-.big-container .bag-container .items-container .item2-container .wrap-checkbox-item .item-desc h1 {
+.big-container .bag-container .left-container .items-container .item2-container .wrap-checkbox-item .item-desc h1 {
   font-size: 16px;
   color: black;
 }
 
-.big-container .bag-container .items-container .item2-container .wrap-checkbox-item .item-desc p {
+.big-container .bag-container .left-container .items-container .item2-container .wrap-checkbox-item .item-desc p {
   font-size: 12px;
   color: #8e8e93;
 }
 
-.big-container .bag-container .items-container .item2-container .wrap-checkbox-item .photo-box {
+.big-container .bag-container .left-container .items-container .item2-container .wrap-checkbox-item .photo-box {
   width: 110px;
   height: 71px;
   -webkit-box-pack: center;
@@ -629,11 +641,11 @@ nav .nav-container .user-menu .email-icon {
           align-items: center;
 }
 
-.big-container .bag-container .items-container .item2-container .wrap-checkbox-item .photo-box img {
+.big-container .bag-container .left-container .items-container .item2-container .wrap-checkbox-item .photo-box img {
   margin-left: 1.2em;
 }
 
-.big-container .bag-container .items-container .item2-container .button-container {
+.big-container .bag-container .left-container .items-container .item2-container .button-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -646,14 +658,14 @@ nav .nav-container .user-menu .email-icon {
           align-items: center;
 }
 
-.big-container .bag-container .items-container .item2-container .button-container h1 {
+.big-container .bag-container .left-container .items-container .item2-container .button-container h1 {
   top: 5px;
   position: relative;
   font-size: 16px;
   color: black;
 }
 
-.big-container .bag-container .items-container .item2-container .button-container .remove-icon {
+.big-container .bag-container .left-container .items-container .item2-container .button-container .remove-icon {
   width: 36px;
   height: 36px;
   background: #d4d4d4;
@@ -670,7 +682,7 @@ nav .nav-container .user-menu .email-icon {
   color: white;
 }
 
-.big-container .bag-container .items-container .item2-container .button-container .add-icon {
+.big-container .bag-container .left-container .items-container .item2-container .button-container .add-icon {
   width: 33px;
   height: 33px;
   border-radius: 50%;
@@ -688,7 +700,7 @@ nav .nav-container .user-menu .email-icon {
   color: #8e8e93;
 }
 
-.big-container .bag-container .items-container .item2-container .price {
+.big-container .bag-container .left-container .items-container .item2-container .price {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -703,13 +715,63 @@ nav .nav-container .user-menu .email-icon {
   margin-right: 3em;
 }
 
-.big-container .bag-container .items-container .item2-container .price h1 {
+.big-container .bag-container .left-container .items-container .item2-container .price h1 {
   color: black;
   font-size: 16px;
   font-weight: 600;
 }
 
-.big-container .bag-container .shopping-summary {
+.big-container .bag-container .left-container .shopping-summary-mobile {
+  padding: 24px;
+  margin-top: 200px;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 720px;
+  height: 140px;
+  border-radius: 4px;
+  -webkit-box-shadow: 0px 0px 10px;
+          box-shadow: 0px 0px 10px;
+  color: #8e8e93;
+  top: 75px;
+}
+
+.big-container .bag-container .left-container .shopping-summary-mobile h1 {
+  font-size: 16px;
+  color: black;
+}
+
+.big-container .bag-container .left-container .shopping-summary-mobile .total-price {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.big-container .bag-container .left-container .shopping-summary-mobile .total-price-text p {
+  color: #8e8e93;
+}
+
+.big-container .bag-container .left-container .shopping-summary-mobile .price {
+  right: 1.5em;
+  position: relative;
+}
+
+.big-container .bag-container .left-container .shopping-summary-mobile .price h1 {
+  font-size: 18px;
+}
+
+.big-container .bag-container .left-container .shopping-summary-mobile .button {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -719,8 +781,72 @@ nav .nav-container .user-menu .email-icon {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 30%;
+}
+
+.big-container .bag-container .left-container .shopping-summary-mobile .button .buy-button {
+  border-radius: 25px;
+  background: #db3022;
+  border: none;
+  width: 50%;
+}
+
+.big-container .bag-container .left-container .shopping-summary-mobile {
+  display: none;
+}
+
+@media all and (max-width: 1438px) {
+  .big-container .bag-container .left-container .shopping-summary-mobile {
+    display: block;
+  }
+}
+
+.big-container .bag-container .right-container .shopping-summary {
+  padding: 24px;
+  top: 75px;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 370px;
   height: 200px;
-  border: 2px solid red;
+  border-radius: 4px;
+  -webkit-box-shadow: 0px 0px 10px;
+          box-shadow: 0px 0px 10px;
+  color: #8e8e93;
+}
+
+.big-container .bag-container .right-container .shopping-summary h1 {
+  font-size: 16px;
+  color: black;
+}
+
+.big-container .bag-container .right-container .shopping-summary .total-price {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.big-container .bag-container .right-container .shopping-summary .total-price-text p {
+  color: #8e8e93;
+}
+
+.big-container .bag-container .right-container .shopping-summary .price h1 {
+  font-size: 18px;
+}
+
+.big-container .bag-container .right-container .shopping-summary .buy-button {
+  border-radius: 25px;
+  background: #db3022;
+  border: none;
 }
 /*# sourceMappingURL=style-bag.css.map */
