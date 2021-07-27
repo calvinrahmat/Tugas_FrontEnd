@@ -1,68 +1,74 @@
 .navbar-wrapper {
 	display: flex;
-	justify-content: center;
-	background: lightblue;
+	justify-content: space-evenly;
+
 	align-items: center;
 
 	.navbar-nav {
 		width: 80%;
 		display: flex;
-		justify-content: center;
+		justify-content: space-between;
 		align-items: center;
-		background: lightgreen;
-		.logo {
-			margin-right: auto;
-		}
-		.filter-container {
-			border: 1px solid #8e8e93;
-			height: 40px;
-			padding: 0 10px;
-			border-radius: 12px;
-			right: 10px;
-			position: relative;
+		background: lightblue;
+		.tools-wrapper {
 			display: flex;
+			justify-content: center;
 			align-items: center;
-			left: 1em;
-			.filter {
-				color: #8e8e93;
-				margin-left: auto;
-				margin-right: auto;
-			}
-		}
-		.search-container {
+			background: pink;
 			width: 40%;
-			height: 40px;
-			border: 1px solid #8e8e93;
-			padding: 0px 20px;
-			margin-left: 0px;
-			border-radius: 23px;
-			position: relative;
-			.elementContainer {
-				width: 100%;
-				height: 100%;
-				vertical-align: middle;
-				.search {
-					border: none;
-					height: 100%;
-					width: 100%;
-					padding: 0px 10px;
-					border-radius: 23px;
-					font-size: medium;
-				}
-				.search:focus {
-					outline: none;
-				}
-				.material-icons {
-					left: 5px;
-					top: 3px;
-					position: relative;
+			.filter-container {
+				border: 1px solid #8e8e93;
+				height: 40px;
+				padding: 0 10px;
+				border-radius: 12px;
+				right: 10px;
+				position: relative;
+				display: flex;
+				align-items: center;
+				left: 1em;
+				.filter {
 					color: #8e8e93;
+					margin-left: auto;
+					margin-right: auto;
 				}
-				a {
-					text-decoration: none;
+			}
+			.search-container {
+				height: 40px;
+				border: 1px solid #8e8e93;
+				min-width: 250px;
+				padding: 0px 20px;
+				margin-left: 20px;
+				border-radius: 23px;
+
+				position: relative;
+				.elementContainer {
+					width: 100%;
+					height: 100%;
+					vertical-align: middle;
+					.search {
+						border: none;
+						height: 100%;
+						width: 100%;
+						padding: 0px 10px;
+						border-radius: 23px;
+						font-size: medium;
+					}
+					.search:focus {
+						outline: none;
+					}
+					.material-icons {
+						left: 5px;
+						top: 3px;
+						position: relative;
+						color: #8e8e93;
+					}
+					a {
+						text-decoration: none;
+					}
 				}
 			}
 		}
+
 		.user-menu {
 			display: flex;
 
@@ -98,6 +104,10 @@
 .navbar-brand {
 	display: none;
 }
+.navbar-mobile {
+	display: none;
+}
+
 @media all and (max-width: 766px) {
 	.navbar-brand {
 		display: flex;
@@ -106,7 +116,8 @@
 
 		display: block;
 	}
-	.logo {
-		display: none;
+
+	.navbar-mobile {
+		display: block;
 	}
 }
