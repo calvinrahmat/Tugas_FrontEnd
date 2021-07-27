@@ -10,6 +10,25 @@ body {
   background: #e5e5e5;
 }
 
+nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 nav .nav-container {
   background-color: white;
   top: 0;
@@ -139,6 +158,39 @@ nav .nav-container .user-menu .button-signup {
   padding-bottom: 2em;
 }
 
+nav .navbar-mobile {
+  width: 70%;
+}
+
+nav .navbar-mobile ul li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  list-style: none;
+  padding: 1em;
+  border-bottom: 1px solid #8e8e93;
+  width: 100%;
+}
+
+nav .navbar-mobile ul li a {
+  text-decoration: none;
+  color: black;
+}
+
+nav .navbar-mobile {
+  display: none;
+}
+
 @media all and (max-width: 760px) {
   nav .nav-container {
     display: -webkit-box;
@@ -159,10 +211,18 @@ nav .nav-container .user-menu .button-signup {
   nav .nav-container .user-menu {
     display: none;
   }
+  nav .nav-container .burger-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
   nav .nav-container .burger-container .burger {
     display: block;
     right: 0px;
-    position: relative;
+    position: absolute;
   }
   nav .nav-container .filter-container {
     display: none;
@@ -197,6 +257,9 @@ nav .nav-container .user-menu .button-signup {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
+  }
+  nav .navbar-mobile {
+    display: block;
   }
 }
 

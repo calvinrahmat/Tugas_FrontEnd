@@ -11,6 +11,12 @@ body {
 }
 
 nav {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	justify-content: center;
+	align-items: center;
+
 	.nav-container {
 		background-color: white;
 
@@ -115,6 +121,29 @@ nav {
 			}
 		}
 	}
+
+	.navbar-mobile {
+		width: 70%;
+		ul {
+			li {
+				display: flex;
+				flex-direction: column;
+				justify-content: center;
+				align-items: center;
+				list-style: none;
+				padding: 1em;
+				border-bottom: 1px solid #8e8e93;
+				width: 100%;
+				a {
+					text-decoration: none;
+					color: black;
+				}
+			}
+		}
+	}
+	.navbar-mobile {
+		display: none;
+	}
 	@media all and (max-width: 760px) {
 		.nav-container {
 			display: flex;
@@ -132,10 +161,12 @@ nav {
 			}
 
 			.burger-container {
+				display: flex;
+				align-items: center;
 				.burger {
 					display: block;
 					right: 0px;
-					position: relative;
+					position: absolute;
 				}
 			}
 			.filter-container {
@@ -166,6 +197,9 @@ nav {
 			.user-menu {
 				justify-content: space-between;
 			}
+		}
+		.navbar-mobile {
+			display: block;
 		}
 	}
 	@media all and (max-width: 1024px) {
