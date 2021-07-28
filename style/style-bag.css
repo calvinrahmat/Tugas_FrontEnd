@@ -328,7 +328,11 @@ body {
   margin-right: 1em;
 }
 
-.big-container .bag-container .left-container .select-container .delete-box p {
+.big-container .bag-container .left-container .select-container .delete-box a {
+  text-decoration: none;
+}
+
+.big-container .bag-container .left-container .select-container .delete-box a p {
   top: 23px;
   position: relative;
   color: #db3022;

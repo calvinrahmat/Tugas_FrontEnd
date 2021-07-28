@@ -230,11 +230,14 @@ body {
 					display: flex;
 					height: 70px;
 					margin-right: 1em;
-					p {
-						top: 23px;
-						position: relative;
-						color: #db3022;
-						font-weight: 500;
+					a {
+						text-decoration: none;
+						p {
+							top: 23px;
+							position: relative;
+							color: #db3022;
+							font-weight: 500;
+						}
 					}
 				}
 			}
