@@ -9,6 +9,10 @@
   font-weight: 500px;
 }
 
+body {
+  min-height: 100%;
+}
+
 .navbar-wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -20,6 +24,7 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  height: 75px;
 }
 
 .navbar-wrapper .navbar-nav {
@@ -160,11 +165,32 @@
 }
 
 .navbar-mobile {
-  height: 100vh;
+  width: 70%;
+  position: relative;
+  padding-bottom: 10px;
 }
 
-.navbar-mobile h1 {
-  font-size: 16px;
+.navbar-mobile ul {
+  top: 40px;
+  position: relative;
+}
+
+.navbar-mobile ul li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 1em;
+  border-bottom: 1px solid #8e8e93;
+  width: 100%;
+  position: relative;
+  text-align: center;
 }
 
 .navbar-mobile {
@@ -288,7 +314,7 @@
 }
 
 .big-container .bag-container .left-container .select-container .wrap-checkbox-desc .select-items p {
-  top: 23px;
+  top: 1.5em;
   position: relative;
   color: black;
   font-weight: bold;
@@ -666,7 +692,7 @@
 
 .big-container .bag-container .left-container .shopping-summary-mobile {
   padding: 24px;
-  margin-top: 200px;
+  margin-top: 30em;
   position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -738,6 +764,30 @@
 @media all and (max-width: 1438px) {
   .big-container .bag-container .left-container .shopping-summary-mobile {
     display: block;
+  }
+  .big-container .bag-container .left-container .select-items {
+    bottom: 1em;
+    position: relative;
+  }
+}
+
+@media all and (max-width: 566px) {
+  .big-container .bag-container .left-container .shopping-summary-mobile {
+    display: block;
+  }
+  .big-container .bag-container .left-container .select-items {
+    bottom: 1em;
+    position: relative;
+  }
+  .big-container .bag-container .left-container .item1-container,
+  .big-container .bag-container .left-container .item2-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
 }
 
