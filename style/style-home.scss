@@ -165,7 +165,7 @@ nav {
 				align-items: center;
 				.burger {
 					display: block;
-					right: 0px;
+					right: 1em;
 					position: absolute;
 				}
 			}
@@ -198,7 +198,8 @@ nav {
 				justify-content: space-between;
 			}
 		}
-		.navbar-mobile {
+
+		.navbar-mobile.active {
 			display: block;
 		}
 	}

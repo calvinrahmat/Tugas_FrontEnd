@@ -221,7 +221,7 @@ nav .navbar-mobile {
   }
   nav .nav-container .burger-container .burger {
     display: block;
-    right: 0px;
+    right: 1em;
     position: absolute;
   }
   nav .nav-container .filter-container {
@@ -258,7 +258,7 @@ nav .navbar-mobile {
         -ms-flex-pack: justify;
             justify-content: space-between;
   }
-  nav .navbar-mobile {
+  nav .navbar-mobile.active {
     display: block;
   }
 }

@@ -18,3 +18,10 @@ function loginCustomer() {
 	btnCustColor.style.color = 'white';
 	btnSellerColor.style.color = '#9b9b9b';
 }
+
+const burgerButton = document.getElementsByClassName('burger-container')[0];
+const navbarMobile = document.getElementsByClassName('navbar-mobile')[0];
+
+burgerButton.addEventListener('click', () => {
+	navbarMobile.classList.toggle('active');
+});
