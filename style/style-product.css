@@ -1,0 +1,188 @@
+h1 {
+  font-size: 28px;
+}
+
+h2 {
+  font-size: 20px;
+}
+
+.wrapper {
+  margin-top: 10em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 1140px;
+}
+
+.wrapper .product-container {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.wrapper .product-container .left-container .box {
+  width: 500px;
+  height: 500px;
+  border-radius: 8px;
+}
+
+.wrapper .product-container .left-container .crop-to-fit {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.wrapper .product-container .left-container .crop-to-fit img {
+  width: 500px;
+  height: 500px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.wrapper .product-container .right-container .price-container {
+  margin-top: 100px;
+}
+
+.wrapper .product-container .right-container .price-container h2 {
+  font-size: 16px;
+  color: #9b9b9b;
+}
+
+.wrapper .product-container .right-container .price-container p {
+  font-size: 33px;
+}
+
+.wrapper .product-container .right-container .seller {
+  top: 5px;
+  color: #9b9b9b;
+  position: relative;
+}
+
+.wrapper .product-container .right-container .checked {
+  color: orange;
+}
+
+.wrapper .product-container .right-container h1 {
+  color: black;
+  font-size: 28px;
+}
+
+.wrapper .product-container .right-container h2 {
+  color: black;
+  font-size: 16px;
+  position: relative;
+}
+
+.wrapper .product-container .right-container .counts {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.wrapper .product-container .right-container .counts .count {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.wrapper .product-container .right-container .counts .btn-circle.btn-sm {
+  width: 30px;
+  height: 30px;
+  padding: 6px 0px;
+  border-radius: 15px;
+  font-size: 25px;
+  text-align: center;
+  background-color: #d4d4d4;
+  border: none;
+}
+
+.wrapper .product-container .right-container .counts .btn-circle.btn-sm h1 {
+  bottom: 10px;
+  position: relative;
+  color: white;
+}
+
+.wrapper .product-container .right-container .counts .count-btn {
+  margin-top: 5em;
+  position: absolute;
+  background: lightcoral;
+}
+
+.wrapper .product-container .right-container .counts .count-btn .btn-reduce {
+  background: #d4d4d4;
+  border: none;
+}
+
+.wrapper .product-container .right-container .counts .count-btn .btn-reduce h1 {
+  color: white;
+}
+
+.wrapper .product-container .right-container .counts .count-btn p {
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+.wrapper .product-container .right-container .counts .count-btn .btn-add {
+  background: #d4d4d4;
+  border: none;
+}
+
+.wrapper .product-container .right-container .counts .count-btn .btn-add h1 {
+  color: white;
+}
+
+.wrapper .product-container .right-container .buttons {
+  top: 6em;
+  position: relative;
+}
+
+.wrapper .product-container .right-container .buttons .chat-btn {
+  width: 6rem;
+  height: 48px;
+  border-radius: 24px;
+  border: 1px solid #222222;
+  background-color: white;
+  color: black;
+}
+
+.wrapper .product-container .right-container .buttons .to-bag-btn {
+  width: auto;
+  height: 48px;
+  border-radius: 24px;
+  border: 1px solid #222222;
+  background-color: white;
+  color: black;
+}
+
+.wrapper .product-container .right-container .buttons .buy-btn {
+  width: 8rem;
+  height: 48px;
+  border-radius: 24px;
+  border: 1px solid #222222;
+  background: #db3022;
+  border: none;
+}
+
+.wrapper .description {
+  margin-top: 3em;
+}
+
+.wrapper .description h2 {
+  margin-top: 1em;
+}
+
+.wrapper .description p {
+  color: #9b9b9b;
+}
+/*# sourceMappingURL=style-product.css.map */
